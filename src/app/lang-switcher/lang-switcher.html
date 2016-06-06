@@ -1,0 +1,10 @@
+<div class="lang-switcher" ng-controller="LangSwitcherCtrl as switcher">
+    <div
+        class="lang"
+        ng-repeat="lang in switcher.langs"
+        ng-class="{ active: switcher.selected(lang) }"
+        ng-click="switcher.select(lang)"
+    >
+        {{ lang }}
+    </div>
+</div>
